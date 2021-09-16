@@ -34,6 +34,7 @@ test("renders the summary test passed as prop", () => {
   expect(summaryStatement).toBeInTheDocument();
   expect(summaryStatement).toBeTruthy();
   expect(summaryStatement).toBeDefined();
+  expect(summaryStatement).toHaveTextContent("Example summary statement");
 });
 
 test("renders default image when image is not defined", () => {
